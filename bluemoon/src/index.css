@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-cream text-ink font-sans antialiased; }
+h1, h2, h3, h4 { @apply font-serif; }
+:focus-visible { outline: 3px solid #F2764B; outline-offset: 3px; border-radius: 8px; }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-5 md:px-8; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-300; }
+  .btn-primary { @apply btn bg-coral text-white hover:bg-coral-dark shadow-soft; }
+  .btn-ocean { @apply btn bg-ocean text-white hover:bg-ocean-dark; }
+  .btn-ghost { @apply btn border border-ocean/30 text-ocean hover:bg-ocean hover:text-white; }
+  .btn-wa { @apply btn bg-[#1FA855] text-white hover:bg-[#178a45]; }
+  .label { @apply text-xs font-semibold uppercase tracking-wider; }
+  .glass { @apply bg-white/20 backdrop-blur-xl border border-white/40 shadow-2xl; }
+  .skeleton { @apply animate-pulse bg-sand rounded-3xl; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

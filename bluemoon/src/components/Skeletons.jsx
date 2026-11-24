@@ -1,0 +1,4 @@
+export const VillaSkeleton = () => <div className="skeleton h-[560px]" aria-hidden="true" />
+export function Loading({ n = 2 }) {
+  return <div className="grid gap-8 md:grid-cols-2" role="status" aria-label="Loading villas">{Array.from({ length: n }).map((_, i) => <VillaSkeleton key={i} />)}</div>
+}
