@@ -3,12 +3,10 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      colors: {
-        cream: '#FFF6E5', sand: '#EFE3CE', ocean: { DEFAULT: '#0B6E8A', dark: '#08566C' },
-        teal: { DEFAULT: '#14A3A3', dark: '#0E7C7C' }, coral: { DEFAULT: '#F2764B', dark: '#D95A30' }, ink: '#1F2A33'
-      },
-      fontFamily: { serif: ['"Cormorant Garamond"', 'Playfair Display', 'serif'], sans: ['Inter', 'Poppins', 'system-ui', 'sans-serif'] },
-      boxShadow: { soft: '0 10px 40px -12px rgba(11,110,138,.25)' }
+      colors: { navy: { DEFAULT: '#123047', light: '#1C4260' }, teal: { DEFAULT: '#397C7A', dark: '#2B6361' },
+        ivory: '#F8F6F0', sand: '#E8DDCB', seafoam: '#DCEAE5', charcoal: '#252B2D' },
+      fontFamily: { serif: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'], sans: ['Manrope', 'Inter', 'system-ui', 'sans-serif'] },
+      boxShadow: { soft: '0 18px 50px -20px rgba(18,48,71,.28)' }
     }
   },
   plugins: []

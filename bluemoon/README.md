@@ -1,6 +1,6 @@
 # Blue Moon Beach House (bluemoonbeachhouse)
 
-React (Vite) + Tailwind + GSAP + Supabase. Stage 1: setup, Home, Villas.
+React (Vite) + Tailwind + GSAP + Supabase. Redesign: single-page home (hero, about, villas, amenities, gallery + lightbox, location, enquiry). Photos: put files in src/assets/villas/<slug>/ or upload via admin (Stage 4).
 
 ## Run locally
 1. `npm install`
