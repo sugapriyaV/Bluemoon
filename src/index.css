@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-cream text-charcoal font-sans antialiased overflow-x-hidden; }
+h1, h2, h3, h4 { @apply font-serif text-navy; }
+:focus-visible { outline: 3px solid #C8A96A; outline-offset: 3px; border-radius: 10px; }
+::selection { background: #C8A96A; color: #0A1F33; }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-[1400px] px-5 md:px-10; }
+  .btn { @apply relative inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide transition duration-500; }
+  .btn-primary { @apply btn bg-navy text-cream hover:bg-ocean; }
+  .btn-gold { @apply btn bg-champagne text-navy hover:bg-cream; }
+  .btn-light { @apply btn bg-cream text-navy hover:bg-champagne; }
+  .btn-outline { @apply btn border border-navy/30 text-navy hover:bg-navy hover:text-cream; }
+  .btn-ghost-light { @apply btn border border-white/50 text-white hover:bg-white hover:text-navy; }
+  .btn-wa { @apply btn bg-[#1B8F4B] text-white hover:bg-[#157239]; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.28em] text-champagne-dark; }
+  .glass { @apply bg-white/15 backdrop-blur-xl border border-white/30; }
+  .field { @apply w-full rounded-2xl border border-navy/20 bg-white px-4 py-3 text-sm text-charcoal placeholder-charcoal/50 transition focus:border-teal; }
+  .field-err { @apply border-[#B3261E]; }
+  .skeleton { @apply animate-pulse bg-sand rounded-[28px]; }
+  .nav-link { @apply relative py-1 text-sm font-medium transition-colors after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-champagne after:transition-transform after:duration-500 hover:after:scale-x-100; }
+  .nav-link.active { @apply after:scale-x-100; }
+}
+.hscroll::-webkit-scrollbar { display: none; }
+.hscroll { scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
