@@ -1,0 +1,1 @@
+Drop this villa's real photos here (.jpg/.jpeg/.png/.webp). They appear on the site automatically, in filename order (01.jpg, 02.jpg ...).
